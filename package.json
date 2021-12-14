@@ -1,0 +1,19 @@
+{
+  "name": "tuto-youtube",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "elasticsearch": "^16.7.2",
+    "nodemon": "^2.0.15",
+    "winston": "^3.3.3",
+    "winston-elasticsearch": "^0.16.0"
+  }
+}
