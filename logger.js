@@ -1,5 +1,6 @@
 const winston = require('winston');
-// const {ElasticsearchTransport} = require('winston-elasticsearch');
+const ecsFormat = require('@elastic/ecs-winston-format');
+
 
 const customFormat = winston.format.printf(i => {
 	return `${i.level.toUpperCase()}: ${i.timestamp} ${i.message}`;
@@ -74,15 +75,24 @@ var transports = [
 			winston.format.colorize(),
 			winston.format.simple()
 		)
-	})
+  }),
+  new (winston.transports.File)({
+    format: ecsFormat({ convertReqRes: true }),
+    filename: './logs/ecs.log',
+    datePattern: 'YYYY-MM-DD',
+		maxSize: '128m',
+		maxFiles: '14d',
+  }),
 ]
-
 var logger = winston.createLogger({
-	transports: transports,
-	exitOnError: false,
-	format: winston.format.combine(
-		winston.format.timestamp(),
-		customFormat
-	)
-})
+  transports: transports,
+  exitOnError: false,
+  format: winston.format.combine(
+    
+    winston.format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+    customFormat
+  )
+});
+
+
 module.exports = logger;

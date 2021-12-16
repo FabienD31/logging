@@ -1,0 +1,12 @@
+{"@timestamp":"2021-12-16T10:50:04.894Z","log.level":"info","message":"message d'info","ecs":{"version":"1.6.0"},"timestamp":"2021-12-16 11:50:04"}
+{"@timestamp":"2021-12-16T10:50:04.896Z","log.level":"warn","message":"message d'avertissement","ecs":{"version":"1.6.0"},"timestamp":"2021-12-16 11:50:04"}
+{"@timestamp":"2021-12-16T10:50:04.898Z","log.level":"error","message":"message d'erreur","ecs":{"version":"1.6.0"},"timestamp":"2021-12-16 11:50:04"}
+{"@timestamp":"2021-12-16T10:50:04.908Z","log.level":"info","message":"app is running","ecs":{"version":"1.6.0"},"timestamp":"2021-12-16 11:50:04"}
+{"@timestamp":"2021-12-16T13:20:03.277Z","log.level":"info","message":"message d'info","ecs":{"version":"1.6.0"},"timestamp":"2021-12-16 14:20:03"}
+{"@timestamp":"2021-12-16T13:20:03.279Z","log.level":"warn","message":"message d'avertissement","ecs":{"version":"1.6.0"},"timestamp":"2021-12-16 14:20:03"}
+{"@timestamp":"2021-12-16T13:20:03.280Z","log.level":"error","message":"message d'erreur","ecs":{"version":"1.6.0"},"timestamp":"2021-12-16 14:20:03"}
+{"@timestamp":"2021-12-16T13:20:03.295Z","log.level":"info","message":"app is running","ecs":{"version":"1.6.0"},"timestamp":"2021-12-16 14:20:03"}
+{"@timestamp":"2021-12-16T13:20:44.612Z","log.level":"info","message":"message d'info","ecs":{"version":"1.6.0"},"timestamp":"2021-12-16 14:20:44"}
+{"@timestamp":"2021-12-16T13:20:44.614Z","log.level":"warn","message":"message d'avertissement","ecs":{"version":"1.6.0"},"timestamp":"2021-12-16 14:20:44"}
+{"@timestamp":"2021-12-16T13:20:44.616Z","log.level":"error","message":"message d'erreur","ecs":{"version":"1.6.0"},"timestamp":"2021-12-16 14:20:44"}
+{"@timestamp":"2021-12-16T13:20:44.624Z","log.level":"info","message":"app is running","ecs":{"version":"1.6.0"},"timestamp":"2021-12-16 14:20:44"}
